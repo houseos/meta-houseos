@@ -1,0 +1,5 @@
+build_output/
+build_output_installer/
+build.sh
+buildInstaller.sh
+copy.sh
