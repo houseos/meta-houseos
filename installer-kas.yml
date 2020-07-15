@@ -1,0 +1,34 @@
+# meta-odyssey
+# installer-kas.yml
+# SPDX-License-Identifier: MIT
+# Copyright (C) 2020 Benjamin Schilling
+
+header:
+  version: 8
+
+distro: debian-buster
+machine: live
+target: installer-image
+
+repos:
+  meta-odyssey:
+
+  isar:
+    url: https://github.com/benjaminSchilling33/isar.git
+    refspec: ad81c98e1d6c406706ce10d34071e96c4bb4f6b9
+    layers:
+      meta:
+    
+bblayers_conf_header:
+  standard: |
+    LCONF_VERSION = "6"
+    BBPATH = "${TOPDIR}"
+    BBFILES ?= ""
+
+local_conf_header:
+  standard: |
+    CONF_VERSION = "1"
+  users: |
+    USERS += "root"
+    # password is toor
+    USER_root[password] ??= "$6$rounds=10000$uczeoyJ.$McGYMGMcYVwnQ1oPTqhVOiZNUlTSC55BiQcW4UIIpcy..YS7EVH/8Gd3rJC30i4amBExZTfPUQ1PKEneaZw2q0"

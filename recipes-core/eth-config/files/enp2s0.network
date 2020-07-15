@@ -1,0 +1,7 @@
+[Match]
+Name=enp2s0
+
+[Network]
+DNS=192.168.2.1
+Address=192.168.2.87/24
+Gateway=192.168.2.1

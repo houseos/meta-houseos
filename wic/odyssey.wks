@@ -1,0 +1,10 @@
+# meta-odyssey
+# odyssey.wks
+# SPDX-License-Identifier: MIT
+# Copyright (C) 2020 Benjamin Schilling
+
+part /boot --source bootimg-efi-isar --sourceparams "loader=grub-efi" --ondisk mmcblk0 --label efi --part-type EF00 --align 1024
+
+part / --source rootfs  --ondisk sda --fstype ext4 --label rootfs --align 1024 --use-uuid --extra-space 1000M
+
+bootloader --ptable gpt --timeout 5

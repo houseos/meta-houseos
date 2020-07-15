@@ -1,0 +1,15 @@
+board_manager:
+  additional_urls: ['https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json']
+daemon:
+  port: "50051"
+directories:
+  data: /opt/arduino-cli
+  downloads: /opt/arduino-cli/staging
+  user: /home/dev/Arduino
+logging:
+  file: ""
+  format: text
+  level: info
+telemetry:
+  addr: :9090
+  enabled: false

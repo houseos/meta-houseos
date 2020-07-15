@@ -1,0 +1,16 @@
+# meta-odyssey
+# debian-buster-house-os.list
+# SPDX-License-Identifier: MIT
+# Copyright (C) 2020 Benjamin Schilling
+
+deb	http://deb.debian.org/debian buster main contrib non-free
+deb-src	http://deb.debian.org/debian buster main contrib non-free
+
+deb	http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+deb-src	http://deb.debian.org/debian-security/ buster/updates main contrib non-free
+
+deb	http://deb.debian.org/debian buster-updates main contrib non-free
+deb-src	http://deb.debian.org/debian buster-updates main contrib non-free
+
+# For Docker
+deb [arch=amd64] https://download.docker.com/linux/debian buster stable

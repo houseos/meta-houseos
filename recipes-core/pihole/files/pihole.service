@@ -1,0 +1,11 @@
+[Unit]
+Description=pihole Docker Container
+
+[Service]
+User=pihole
+Type=simple
+WorkingDirectory=/home/pihole
+ExecStart=/usr/local/bin/docker-compose up
+
+[Install]
+WantedBy=multi-user.target
