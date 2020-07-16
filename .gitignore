@@ -1,5 +1,9 @@
+out/
 build_output/
 build_output_installer/
+build/
 build.sh
 buildInstaller.sh
 copy.sh
+isar/
+kas-docker
