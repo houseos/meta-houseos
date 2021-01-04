@@ -6,19 +6,20 @@
 
 header:
   version: 8
+  includes:
+    - repo: meta-odyssey
+      file: meta-odyssey-kas.yml
 
 distro: debian-buster-house-os
 machine: seeed-odyssey
-target: odyssey-image
+target: houseos-image
 
 repos:
-  meta-odyssey:
+  meta-houseos:
 
-  isar:
-    url: https://github.com/benjaminSchilling33/isar.git
-    refspec: ad81c98e1d6c406706ce10d34071e96c4bb4f6b9
-    layers:
-      meta:
+  meta-odyssey:
+    url: https://github.com/houseos/meta-odyssey.git
+    refspec: d972a324b83f8b39077a97447695d622e4a56c27
     
 bblayers_conf_header:
   standard: |

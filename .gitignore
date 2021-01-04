@@ -7,3 +7,4 @@ buildInstaller.sh
 copy.sh
 isar/
 kas-docker
+/build_out

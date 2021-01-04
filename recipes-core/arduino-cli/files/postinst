@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# Install ATSAMD21G18 Arduino Core
-export PATH=$PATH:/opt/arduino-cli
-echo "Updating arduino-cli index"
-arduino-cli --config-file /opt/arduino-cli/arduino-cli.yaml core update-index
-echo "Installing Seeduino:samd package"
-arduino-cli --config-file /opt/arduino-cli/arduino-cli.yaml core install Seeeduino:samd

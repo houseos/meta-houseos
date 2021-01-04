@@ -2,4 +2,4 @@ inherit image
 
 DESCRIPTION = "Seeed Odyssey Image"
 
-require basic-config.inc
+require recipes-core/images/basic-config.inc

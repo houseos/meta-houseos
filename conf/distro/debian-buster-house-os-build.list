@@ -1,5 +1,5 @@
 # meta-odyssey
-# debian-buster-house-os.list
+# debian-buster-house-os-build.list
 # SPDX-License-Identifier: MIT
 # Copyright (C) 2020 Benjamin Schilling
 
@@ -11,9 +11,6 @@ deb-src	http://deb.debian.org/debian-security/ buster/updates main contrib non-f
 
 deb	http://deb.debian.org/debian buster-updates main contrib non-free
 deb-src	http://deb.debian.org/debian buster-updates main contrib non-free
-
-# For Docker
-deb [arch=amd64] https://download.docker.com/linux/debian buster stable
 
 # To build scp-client
 deb [arch=amd64] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main
