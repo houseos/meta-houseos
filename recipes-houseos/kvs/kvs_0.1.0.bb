@@ -5,14 +5,11 @@
 DESCRIPTION = "kvs - Key value store"
 MAINTAINER = "Benjamin Schilling <benjamin.schilling33@gmail.com>"
 
-SRC_URI = "git://github.com/houseos/kvs.git;branch=fix-deb;protocol=https"
-SRCREV = "0231eaac16f0bf6ae8296c30a4379210b80f97f7"
+SRC_URI = "git://github.com/houseos/kvs.git;branch=main;protocol=https"
+SRCREV = "2705165177ebd6d10026630dcd49acdb96850d33"
 
 inherit dpkg
 
 S = "${WORKDIR}/git"
 
 PR = "r0"
-
-dpkg_runbuild_prepend() {
-}

@@ -4,7 +4,7 @@
 
 inherit dpkg
 
-SRC_URI = "git://github.com/houseos/secure_control_protocol.git;branch=debian-packaging;protocol=https"
-SRCREV = "b7073f00a2c68759147b5d8e61b17bde133f4401"
+SRC_URI = "git://github.com/houseos/secure_control_protocol.git;branch=master;protocol=https"
+SRCREV = "2f3c15c5c144d3e2a6fe71f34d158f0d468d26a6"
 
 S = "${WORKDIR}/git"

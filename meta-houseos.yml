@@ -12,14 +12,14 @@ header:
 
 distro: debian-buster-house-os
 machine: seeed-odyssey
-target: houseos-image
+target: house-os-image
 
 repos:
   meta-houseos:
 
   meta-odyssey:
     url: https://github.com/houseos/meta-odyssey.git
-    refspec: d972a324b83f8b39077a97447695d622e4a56c27
+    refspec: 0795a7930bf3f92a80710ed1bb6b6645697e0b0c
     
 bblayers_conf_header:
   standard: |
