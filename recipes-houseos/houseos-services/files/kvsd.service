@@ -1,0 +1,14 @@
+[Unit]
+Description=Key Value Store Daemon
+Documentation=https://github.com/houseos/kvs
+
+[Service]
+User=kvsd
+Type=simple
+ExecStart=/usr/bin/kvsd --ip 127.0.0.1 --port 27001 --path /mnt/data/kvsd/ --backend file
+StandardOutput=null
+Restart=always
+After=kvsd-dir.service
+
+[Install]
+WantedBy=multi-user.target
