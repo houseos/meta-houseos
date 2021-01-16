@@ -1,0 +1,10 @@
+[Unit]
+Description=Data mount service unit
+
+[Mount]
+Type=ext4
+What=/dev/sda5
+Where=/mnt/data
+
+[Install]
+WantedBy=multi-user.target

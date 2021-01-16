@@ -1,0 +1,14 @@
+[Unit]
+Description=Key Value Store Daemon Store directory creation
+Documentation=https://github.com/houseos/kvs
+
+[Service]
+Type=simple
+ExecStartPre=mkdir -p /mnt/data/kvsd
+ExecStart=chown -c kvsd /mnt/data/kvsd
+StandardOutput=null
+Restart=always
+After=mnt-data.mount
+
+[Install]
+WantedBy=multi-user.target

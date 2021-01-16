@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Enable systemd units
+systemctl enable /usr/lib/systemd/user/kvsd.service
+systemctl enable /usr/lib/systemd/user/kvsd-dir.service
+systemctl enable /usr/lib/systemd/user/mnt-data.mount
+
+systemctl daemon-reload
