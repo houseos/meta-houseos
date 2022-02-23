@@ -1,7 +1,7 @@
 # meta-odyssey
 # installer-kas.yml
 # SPDX-License-Identifier: MIT
-# Copyright (C) 2020 Benjamin Schilling
+# Copyright (C) 2020-2022 Benjamin Schilling
 
 header:
   version: 8
@@ -14,8 +14,8 @@ repos:
   meta-odyssey:
 
   isar:
-    url: https://github.com/benjaminSchilling33/isar.git
-    refspec: ad81c98e1d6c406706ce10d34071e96c4bb4f6b9
+    url: https://github.com/ilbers/isar.git
+    refspec: ffdd1b0ce026d21c8b62c06c926d205aad3078b6
     layers:
       meta:
     

@@ -8,3 +8,4 @@ copy.sh
 isar/
 kas-docker
 /build_out
+kas-container
